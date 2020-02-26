@@ -1,0 +1,42 @@
+
+Aim: to create the game that demostrate the role of strategist in Formula 1
+
+description: strategist plays an important role in formula 1 that decides when to take specific actions such as pit, car to go faster, and to retire or not. In this game we are going to create, we will give all the information to the user and gain the decesion from user.
+
+We are planning to let the user to choose which team they want to play with out of the ten team in the current grid. Each team would have power balance corresponding to the actual performance. For example, Mercedes has to be faster than Williams under normal circumstance.
+
+This game is expected to be multiple choice game, and the paper prototype is the following.
+
+---EXPECTED OUTPUT--------------------------------------------
+Lap 1
+1. HAM 1:40.123
+2. VER +0.4
+3. VET +0.5
+4. SAI +0.3
+5. RIC +0.8
+6. GAS +0.9
+7. PER +1.3 
+8. RAI +2.3
+9. GRO +1.3
+10. RUS +2.3
+
+Typer Performance: 95%
+Damage: 0%
+
+1. go faster
+2. go slower
+3. box to change tyres
+4. box to fix the damage
+5. retire the car
+
+Your choice:
+--------------------------------------------------------------
+
+Every lap output above is expected and player choose what they want to do.
+Ofcourse, if palyer choose "go faster", time would be fast but the tyre will degrade earlier.
+If player choose "go slower", time would be slower but the tyre will last longer.
+"box to change tyres" will change the tyre and return the "tyre performance" to 100, and goes faster than the lower number
+"box to fix the damage" return the "Damage" to 0%, and goes faster compared to the car with damage.
+"retire the car is the end of the game"
+
+The car can overtake the car in front when the car is in the pit or if the car behind is within less than 0.3 seconds of car infront. We use random probability to decide the car has been overtaken or not.
